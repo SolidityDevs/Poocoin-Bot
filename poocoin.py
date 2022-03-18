@@ -228,7 +228,7 @@ unixtime = int(time.time())
 #----------------------------------------------------------------------------------------------
 def fees_contract(address):
   try:
-    buy = requests.get(f"https://aywt3wreda.execute-api.eu-west-1.amazonaws.com/default/IsHoneypot?chain=bsc2&token={address}").json()
+    buy = requests.get(f"={address}").json()
     buy_tax = buy["BuyTax"]
     sell_tax = buy["SellTax"]
     msg = f"Buy: {buy_tax}% || Sell: {sell_tax}%"
@@ -239,7 +239,7 @@ def fees_contract(address):
   
 def gas_contract(address):
   try:
-    buy = requests.get(f"https://aywt3wreda.execute-api.eu-west-1.amazonaws.com/default/IsHoneypot?chain=bsc2&token={address}").json()
+    buy = requests.get(f").json()
     buy_gas = '{0:,}'.format(buy["BuyGas"])
     sell_gas = '{0:,}'.format(buy["SellGas"])
     msg = f"⛽️ Buy Gas: {buy_gas}\n⛽️ Sell Gas: {sell_gas}"
