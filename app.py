@@ -157,7 +157,7 @@ def del_command(update: Update, context: CallbackContext) -> None:
 
 def main() -> None:
     # Create the Updater and pass it your bot's token.
-    token = "2098411703:AAE2JqKNUshhKOMAYdhl76cm3W4_7xMd94w"
+    token = ""
     updater = Updater(token)
    
     print('started bot')
