@@ -16,7 +16,7 @@ def bnbprice():
         except Exception:
             try:
                 url = requests.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BNB&convert=USD'
-                   ,headers = {'X-CMC_PRO_API_KEY': 'ecf29cc1-a01f-489e-943f-ba37a91a4893'}).json()['data']['BNB']['quote']['USD']['price']
+                   ,headers = {'X-CMC_PRO_API_KEY': 'add your cmc link}).json()['data']['BNB']['quote']['USD']['price']
                 return url
             except Exception:
                 return "0.00000"
